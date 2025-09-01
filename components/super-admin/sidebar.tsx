@@ -33,8 +33,11 @@ const navigation = [
     icon: Users,
     children: [
       { name: 'All Users', href: '/super-admin/users' },
+      { name: 'Create User', href: '/super-admin/users/create' },
       { name: 'Suspended Users', href: '/super-admin/users/suspended' },
       { name: 'Admin Users', href: '/super-admin/users/admins' },
+      { name: 'User Analytics', href: '/super-admin/users/analytics' },
+      { name: 'Activity Logs', href: '/super-admin/users/activity' },
     ]
   },
   { 
