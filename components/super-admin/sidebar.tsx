@@ -46,8 +46,11 @@ const navigation = [
     icon: Building,
     children: [
       { name: 'All Businesses', href: '/super-admin/businesses' },
+      { name: 'Create Business', href: '/super-admin/businesses/create' },
       { name: 'Active Businesses', href: '/super-admin/businesses/active' },
       { name: 'Inactive Businesses', href: '/super-admin/businesses/inactive' },
+      { name: 'Business Analytics', href: '/super-admin/businesses/analytics' },
+      { name: 'Business Settings', href: '/super-admin/businesses/settings' },
     ]
   },
   { 
