@@ -67,7 +67,19 @@ const navigation = [
   { name: 'System Health', href: '/super-admin/system', icon: Activity },
   { name: 'Database', href: '/super-admin/database', icon: Database },
   { name: 'Security', href: '/super-admin/security', icon: Shield },
-  { name: 'Support Tickets', href: '/super-admin/support', icon: HelpCircle },
+  { 
+    name: 'Support Tickets', 
+    href: '/super-admin/support', 
+    icon: HelpCircle,
+    children: [
+      { name: 'All Tickets', href: '/super-admin/support' },
+      { name: 'Create Ticket', href: '/super-admin/support/create' },
+      { name: 'Open Tickets', href: '/super-admin/support/open' },
+      { name: 'Escalated Tickets', href: '/super-admin/support/escalated' },
+      { name: 'Support Analytics', href: '/super-admin/support/analytics' },
+      { name: 'Agent Management', href: '/super-admin/support/agents' },
+    ]
+  },
   { name: 'System Alerts', href: '/super-admin/alerts', icon: AlertTriangle },
   { name: 'Settings', href: '/super-admin/settings', icon: Settings },
 ];
